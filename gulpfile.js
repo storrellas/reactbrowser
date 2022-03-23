@@ -9,11 +9,11 @@ gulp.task('serve', function() {
 
 gulp.task('browser-sync', function() {
   browserSync.init({    
-      server: { baseDir: "./public" },
+      server: { baseDir: "./nc2ui" },
       port: 8080
   });
 
   // Watch
-  gulp.watch(['public/*']).on("change", () => browserSync.reload() );
+  gulp.watch(['nc2ui/*']).on("change", () => browserSync.reload() );
 
 });
